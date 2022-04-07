@@ -3,7 +3,7 @@ GET http://localhost:3000/messages
 
 
 ### List a message
-GET http://localhost:3000/messages/1
+GET http://localhost:3000/messages/02321
 
 
 ### Create a new message
