@@ -5,7 +5,17 @@ export class MessagesServices {
 
     constructor() {
         // Service is creating its own dependencies
-        // DONT DO THIS ON REAL APPS!!!!
+        // FIX IT ASAP!!!!
         this.messagesRepo = new MessagesRepository();
+    }
+
+    async findOne(id: string) {
+        return this.messagesRepo.findOne(id);
+    }
+    async findAll() {
+        return this.messagesRepo.findAll();
+    }
+    async create(content: string) {
+        return this.messagesRepo.create(content);
     }
 }
